@@ -2,8 +2,8 @@
 
 int main() {
 	double val = 12.4212331243;
-	printf("%.3lf\n", val); 	/* 12.421	.3 - 3 decimal places, f - print double in "normal" format*/
+	printf("%.3lf\n", val); 	/* 12.421	.3 - 3 miejsca po przecinku, f - liczba zmienno przecinkowa w "normalnym" formacie*/
 
-	printf("%011.4e\n", val); 	/* 01.2421e+01	0-prepend with zero, 11 - at least 11 chars, .4 - for decimal places, e - double in scientific format*/
+	printf("%011.4e\n", val); 	/* 01.2421e+01	0 - uzupełnij zerami, 11 - co najmniej 11 znaków, .4 - cztery miejsca po przecinku, e - format naukowy*/	
 	return 0;
 }
