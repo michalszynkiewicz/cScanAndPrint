@@ -9,11 +9,11 @@ int main() {
 	printf("podany znak: '%c'\n", c);
 
 	printf("podaj ciąg znaków do wczytania przez gets: ");
-	gets(buffer);
+	gets(buffer); /* przestarzałe - niezalecane - nie ma limitu na ilość wczytywanych znaków! */
 	printf("podany ciąg znaków: '%s'\n", buffer);
 
 	printf("podaj ciąg znaków do wczytania przez fgets: ");
-	fgets(buffer, 4096, stdin);
+	fgets(buffer, 4095, stdin);
 	printf("Zwróć uwagę na znak końca linii. Podany ciąg znaków: '%s'\n", buffer);
 	
 	return 0;
